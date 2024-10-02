@@ -1,0 +1,27 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "NooBat",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@google/generative-ai": "^0.20.0",
+    "@huggingface/inference": "^2.8.1",
+    "@types/lodash": "^4.17.9",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "yarn build && node dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
